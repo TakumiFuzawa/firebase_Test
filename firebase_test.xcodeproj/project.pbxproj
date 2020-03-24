@@ -24,6 +24,10 @@
 		D6857FE42429AFFB005EE9C6 /* SinupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6857FE22429AFFB005EE9C6 /* SinupViewController.xib */; };
 		D6857FE72429B01D005EE9C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6857FE52429B01D005EE9C6 /* LoginViewController.swift */; };
 		D6857FE82429B01D005EE9C6 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6857FE62429B01D005EE9C6 /* LoginViewController.xib */; };
+		D6B3C20A2429B6FB000BB550 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B3C2082429B6FB000BB550 /* MyPageViewController.swift */; };
+		D6B3C20B2429B6FB000BB550 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B3C2092429B6FB000BB550 /* MyPageViewController.xib */; };
+		D6B3C20F2429B72C000BB550 /* MyPageSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B3C20D2429B72C000BB550 /* MyPageSettingViewController.swift */; };
+		D6B3C2102429B72C000BB550 /* MyPageSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B3C20E2429B72C000BB550 /* MyPageSettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		D6857FE22429AFFB005EE9C6 /* SinupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SinupViewController.xib; sourceTree = "<group>"; };
 		D6857FE52429B01D005EE9C6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D6857FE62429B01D005EE9C6 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D6B3C2082429B6FB000BB550 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		D6B3C2092429B6FB000BB550 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
+		D6B3C20D2429B72C000BB550 /* MyPageSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageSettingViewController.swift; sourceTree = "<group>"; };
+		D6B3C20E2429B72C000BB550 /* MyPageSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageSettingViewController.xib; sourceTree = "<group>"; };
 		FBFEFB3555BFEBA0436F3ECF /* Pods-firebase_test-firebase_testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase_test-firebase_testUITests.debug.xcconfig"; path = "Target Support Files/Pods-firebase_test-firebase_testUITests/Pods-firebase_test-firebase_testUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7A3B247DCC8542D0E9FB63 /* Pods-firebase_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase_test.debug.xcconfig"; path = "Target Support Files/Pods-firebase_test/Pods-firebase_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +159,7 @@
 		D61A8CC52429AE4A00B5EC6A /* firebase_test */ = {
 			isa = PBXGroup;
 			children = (
+				D6B3C2072429B6E6000BB550 /* MyPage */,
 				D6857FDE2429AED1005EE9C6 /* UserModel */,
 				D6857FDD2429AEC8005EE9C6 /* Auth */,
 				D61A8CC62429AE4A00B5EC6A /* AppDelegate.swift */,
@@ -200,6 +209,25 @@
 				D6857FDF2429AEE7005EE9C6 /* UserModel.swift */,
 			);
 			path = UserModel;
+			sourceTree = "<group>";
+		};
+		D6B3C2072429B6E6000BB550 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				D6B3C20C2429B712000BB550 /* Setting */,
+				D6B3C2082429B6FB000BB550 /* MyPageViewController.swift */,
+				D6B3C2092429B6FB000BB550 /* MyPageViewController.xib */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		D6B3C20C2429B712000BB550 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D6B3C20D2429B72C000BB550 /* MyPageSettingViewController.swift */,
+				D6B3C20E2429B72C000BB550 /* MyPageSettingViewController.xib */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +339,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B3C2102429B72C000BB550 /* MyPageSettingViewController.xib in Resources */,
+				D6B3C20B2429B6FB000BB550 /* MyPageViewController.xib in Resources */,
 				D6857FE42429AFFB005EE9C6 /* SinupViewController.xib in Resources */,
 				D61A8CD32429AE4C00B5EC6A /* LaunchScreen.storyboard in Resources */,
 				D6857FE82429B01D005EE9C6 /* LoginViewController.xib in Resources */,
@@ -446,7 +476,9 @@
 			files = (
 				D6857FE72429B01D005EE9C6 /* LoginViewController.swift in Sources */,
 				D61A8CCB2429AE4A00B5EC6A /* ViewController.swift in Sources */,
+				D6B3C20A2429B6FB000BB550 /* MyPageViewController.swift in Sources */,
 				D61A8CC72429AE4A00B5EC6A /* AppDelegate.swift in Sources */,
+				D6B3C20F2429B72C000BB550 /* MyPageSettingViewController.swift in Sources */,
 				D6857FE02429AEE7005EE9C6 /* UserModel.swift in Sources */,
 				D6857FE32429AFFB005EE9C6 /* SinupViewController.swift in Sources */,
 				D61A8CC92429AE4A00B5EC6A /* SceneDelegate.swift in Sources */,
