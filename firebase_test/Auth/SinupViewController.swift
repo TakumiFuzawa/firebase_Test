@@ -22,6 +22,8 @@ class SinupViewController: BaseViewController {
         userModel.password = passwordTextField.text
         UserModel.create(request: userModel, success: {
             print("成功しました")
+            let vc = MyPageViewController()
+            transitionViewController(from: self, to: vc)
         }) { (error) in
             print(error)
         }

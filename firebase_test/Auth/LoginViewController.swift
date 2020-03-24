@@ -20,6 +20,7 @@ class LoginViewController: BaseViewController {
         
         UserModel.signIn(email: mailTextField.text ?? "", pass: passTextField.text ?? "", failure: { (error) in
             print(error)
+            print("fjeifjejfiejfeojfoefejioej")
         }) {
             print("ログインに成功しました")
         }
